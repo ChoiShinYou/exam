@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var array = [];
+
+		array[0] = 1;
+		array[1] = 1.5;
+		array[2] = "hi";
+		array[3] = "hello";
+		array[4] = 5 > 7;
+
+		console.log(array[0]);
+		console.log(array[1]);
+		console.log(array[2]);
+		console.log(array[3]);
+		console.log(array[4]);
+
+		var array2 = [ 273, 32, 103, 57, 52 ];
+		console.log(array2[0]);
+		console.log(array2[1]);
+		console.log(array2[2]);
+		console.log(array2[3]);
+		console.log(array2[4]);
+		
+		console.log("--------------------------------");
+
+		for(var i=0; i<array.length; i++){
+			console.log(array2[i]);
+		}
+		
+		console.log("--------------------------------");
+
+		var array = [ 273, "String", true, function(){}, {}, [273,103] ];
+		console.log(array);
+		alert(array);
+	      
+	    	console.log(array[1]);
+		alert(array[1]);
+
+	</script>
+
+</body>
+</html>

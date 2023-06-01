@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var guestbookArray = [];
+
+		guestbookArray[0] = {
+			no : "1",
+			name : "최신영",
+			password : "1234",
+			content : "1st visitor",
+			showinfo : function() {
+				console.log(this.name + "  " + this.password + "  "
+						+ this.content);
+			}
+		};
+		guestbookArray[1] = {
+			no : "2",
+			name : "이정환",
+			password : "5678",
+			content : "2nd visitor",
+			showinfo : function() {
+				console.log(this.name + "  " + this.password + "  "
+						+ this.content);
+			}
+		};
+		guestbookArray[2] = {
+			no : "3",
+			name : "모리스",
+			password : "486",
+			content : "puppyㅇㅅㅇ",
+			showinfo : function() {
+				console.log(this.name + "  " + this.password + "  "
+						+ this.content);
+			}
+		};
+		guestbookArray[3] = {
+				no : "3",
+				name : "화이제시",
+				password : "486",
+				content : "meow'ㅅ'",
+				showinfo : function() {
+					console.log(this.name + "  " + this.password + "  "
+							+ this.content);
+				}
+		};
+		
+		var guestbookArray4 = {};
+		guestbookArray.no = 4;
+		guestbookArray.name= "화이";
+		guestbookArray.password = "56789";
+		guestbookArray.content = "hi";
+		guestbookArray.showinfo = function() {
+			console.log(this.name + "  " + this.password + "  "
+					+ this.content);
+		}
+		
+		for(var i=0; i<guestbookArray.length; i++){
+			guestbookArray[i].showinfo();
+		}
+		
+		
+		
+	</script>
+
+</body>
+</html>
